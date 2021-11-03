@@ -29,28 +29,88 @@ a {
 /* title */
 h3 {
     color: white;
+    font-size: 1em;
 }
 
 .main-container {
     background-color: var(--bark-blue);
+    height: 100vh;
+    display: flex;
 }
 
 /* side bar */
 .side-bar {
-    background-color: var(--black);
-    /* display: flex;
-    flex-direction: column; */
-    width: 15em;
-    height: 54em;
+background-color: var(--black);
+position: fixed;
+top: 0;
+left: 0;
+height: 92%;
+width: 15em;
+z-index: 2;
+  
+}
+.side-bar ul,
+h3,
+.get-app {
+    margin-left: 1em;
+}
+.side-bar ul li {
+    margin-bottom: 1em;
 }
 .side-menu ul li a,
 .playlist-menu ul li a {
     color: gray;
     font-weight: bold;
+    font-size: 0.9em;
 }
 .logo img {
     max-width: 70%;
     margin: 1.2em;
+}
+
+.side-menu ul li img {
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+/* playlist */
+.playlist-menu {
+    margin-top: 2em;
+}
+.playlist-menu .fa-plus-square {
+    color: gray;
+    font-size: 3em;
+    margin-right: 0.1em;
+}
+/* profile */
+.get-app img {
+    width: 1.2em;
+    vertical-align: middle;
+}
+
+.get-app a {
+    color: #a3a3a3;
+    font-size: 0.9em;
+}
+.get-app hr {
+    width: 13em;
+    margin: 1em 0;
+}
+.profile {
+    position: fixed;
+    bottom: 6em;
+    left: 0;
+}
+.profile>img {
+    width: 1.5em;
+    background-color: gray;
+    border-radius: 5em;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+.profile>h3 {
+    display: inline;
+    margin: 0.5em;
 }
 
 /* upgrade row */
@@ -59,7 +119,7 @@ h3 {
     position: fixed;
     top: 0;
     right: 0;
-    min-width: 87%;
+    min-width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-content: center;
@@ -84,13 +144,12 @@ h3 {
 /* player */
 .player-row{
     background-color: var(--grey);
-    height: 95px;
+    height: 5em;
     min-width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
+    align-self: flex-end;
+    z-index: 3;
 }
 
 .left-player {
@@ -100,14 +159,31 @@ h3 {
 }
 
 .left-player img {
-    width: 4em;
-    margin: 0 1em;
+    width: 3em;
+    margin-left: 0.6em;
+}
+
+.now-playing {
+    margin: 0 3em 0 0.6em;
 }
 
 .left-player ul li {
     display: inline-block;
+    color: gray;
+}
+.now-playing h4{
+    color: white;
+    font-size: 0.8em;
+}
+.fa-heart {
+    margin-right: 0.4em;
+}
+.now-playing h5{
+    color: gray;
+    font-size: 0.8em;
 }
 .player-control{
+    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -117,8 +193,16 @@ h3 {
 .player-control ul li {
     display: inline-block;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 0.5em;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .slider-track {
     width: 65%;
@@ -126,7 +210,11 @@ h3 {
     background: gray;
     border-radius: 20em;
 }
-
+.timer {
+    color: white;
+    margin: 0 1em;
+    font-size: 0.8em;
+}
 
 
 .player-vol {
@@ -141,9 +229,11 @@ h3 {
 }
 
 .volume-slider {
-    width: 9em;
+    width: 7em;
     height: 5px;
     background: gray;
     border-radius: 20em;
     margin: 0 10px;
 }
+
+
