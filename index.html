@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,175 +8,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+
     <title>Spotify</title>
 </head>
+
 <body>
     <div class="main-container">
-        <div class="side-bar">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <div class="side-menu">
-                <ul>
-                    <li>
-                        <img src="img/home.svg" alt="">
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <img src="img/search.svg" alt="">
-                        <a href="">cerca</a>
-                    </li>
-                    <li>
-                        <img src="img/libreria.svg" alt="">
-                        <a href="">La tua libreria</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="playlist-menu">
-                <h3>PLAYLIST</h3>
-                <ul>
-                    <li><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                </ul>
-            </div>
-            <div class="profile">
-                <div class="get-app">
-                    <img src="img/download.svg
-                    " alt="">
-                    <a href="">Installa app</a>
-                    <hr>
+        <main class="clearfix">
+            <nav class="side-bar">
+                <div class="side-menu">
+                    <div class="side-menu-container">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="img/home.svg" alt="">
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <img src="img/search.svg" alt="">
+                                <a href="">cerca</a>
+                            </li>
+                            <li>
+                                <img src="img/libreria.svg" alt="">
+                                <a href="">La tua libreria</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="playlist-menu">
+                        <h3>PLAYLIST</h3>
+                        <div class="playlist-add">
+                            <i class="fas fa-plus-square"></i>
+                            <a href="">Crea Playlist</a>
+                        </div>
+                        <div class="playlist">
+                            <ul>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/profile.svg" alt="">
-                <h3>John Doe</h3>
-            </div>
-        </div>
-        <div class="player-row">
-            <div class="left-player">
-                <img src="img/player_left.jpg" alt="">
-                <div class="now-playing">
-                    <h4>Sinister</h4>
-                    <h5>Brano Nome</h5>
+                <div class="profile">
+                    <div class="get-app">
+                        <img src="img/download.svg" alt="">
+                        <a href="">Installa app</a>
+                        <hr>
+                    </div>
+                    <img src="img/profile.svg" alt="">
+                    <h3>John Doe</h3>
                 </div>
-                <ul>
-                    <li><i class="far fa-heart"></i></li>
-                    <li><i class="far fa-folder"></i></li>
-                </ul>
-            </div>
-            <div class="player-control">
-                <div class="control">
+            </nav>
+            <section class="main-content">
+                <div class="upgrade-row">
+                    <div class="upgrade">
+                        <a href="">effettua l'upgrade</a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="player-row">
+                <div class="left-player">
+                    <img src="img/player_left.jpg" alt="">
+                    <div class="now-playing">
+                        <h4>Sinister</h4>
+                        <h5>Brano Nome</h5>
+                    </div>
                     <ul>
-                        <li><i class="fas fa-random"></i></li>
-                        <li><i class="fas fa-step-backward"></i></li>
-                        <li><i class="far fa-play-circle"></i></li>
-                        <li><i class="fas fa-step-forward"></i></li>
-                        <li><i class="fas fa-redo"></i></li>
+                        <li><i class="far fa-heart"></i></li>
+                        <li><i class="far fa-folder"></i></li>
                     </ul>
                 </div>
-                <div class="slider">
-                    <div class="timer">0:25</div>
-                    <hr class="slider-track">
-                    <div class="timer">4:35</div>
-        
+                <div class="player-control">
+                    <div class="control">
+                        <ul>
+                            <li><i class="fas fa-random"></i></li>
+                            <li><i class="fas fa-step-backward"></i></li>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-step-forward"></i></li>
+                            <li><i class="fas fa-redo"></i></li>
+                        </ul>
+                    </div>
+                    <div class="slider">
+                        <div class="timer">0:25</div>
+                        <hr class="slider-track">
+                        <div class="timer">4:35</div>
+
+                    </div>
+                </div>
+                <div class="player-vol">
+                    <ul>
+                        <li><i class="fas fa-list"></i></li>
+                        <li><i class="fas fa-desktop"></i></li>
+                        <li><i class="fas fa-volume-up"></i></li>
+                    </ul>
+                    <hr class="volume-slider">
                 </div>
             </div>
-            <div class="player-vol">
-                <ul>
-                    <li><i class="fas fa-list"></i></li>
-                    <li><i class="fas fa-desktop"></i></li>
-                    <li><i class="fas fa-volume-up"></i></li>
-                </ul>
-                <hr class="volume-slider">
-            </div>
-        </div>
-        
-         <div class="upgrade-row">
-            <div class="upgrade"><a href="">effettua l'upgrade</a></div>
-            
-        </div> 
-        <div class="inner-container">
-            <div class="inner-container-menu">
-                <ul>
-                    <li><a href="">in evidenza</a></li>
-                    <li><a href="">podcast</a></li>
-                    <li><a href="">classifiche</a></li>
-                    <li><a href="">generi e mood</a></li>
-                    <li><a href="">nuove uscite</a></li>
-                    <li><a href="">scopri</a></li>
-                </ul>
-            </div>
-            <section class="top-section">
-                <h2>Recently played</h2>
-                <ul>
-                    <li>
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </li>
-                    <li>
-                        <img src="img/stranger.jpeg" alt="">
-                        <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack</h3>
-                        <p>Subtitle</p>
-                    </li>
-                    <li>
-                        <img src="img/aquietplace.jpeg" alt="">
-                        <h3>A quiet place</h3>
-                        <p>Subtitle</p>
-                    </li>
-                    <li>
-                        <img src="img/split.jpeg" alt="">
-                        <h3>Split</h3>
-                        <p>Subtitle</p>
-                    </li>
-                    <li>
-                        <img src="img/cure.jpeg" alt="">
-                        <h3>A cure for wellness</h3>
-                        <p>Subtitle</p>
-                    </li>
-                    <li>
-                        <img src="img/sinister.jpeg" alt="">
-                        <h3>Sinister</h3>
-                        <p>Subtitle</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="mid-section">
-                <h2>Creato per John Doe</h2>
-                <p class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
-                <ul>
-                    <li>
-                        <img src="img/radar.jpeg" alt="">
-                        <h3>Release Radar</h3>
-                    </li>
-                    <li>
-                        <img src="img/mixdaily.jpeg" alt="">
-                        <h3>Daily Mix1</h3>
-                    </li>
-            </section>
-            <section class="bot-section">
-                <h2>Artisti pi&ugrave; popolari</h2>
-                <p class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
-                <ul>
-                    <li>
-                        <img src="img/radar.jpeg" alt="">
-                        <h3>Release Radar</h3>
-                    </li>
-                    <li>
-                        <img src="img/mixdaily.jpeg" alt="">
-                        <h3>Daily Mix1</h3>
-                    </li>
-            </section>
-        </div>
+        </footer>
     </div>
 </body>
+
 </html>
