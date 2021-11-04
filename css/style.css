@@ -43,7 +43,12 @@ ul {
 a {
     text-decoration: none;
 }
-
+/* tiltle */
+h2,
+h3 {
+  color: white;
+}
+/* /common */
 .main-container {
   width: 100%;
   height: 100vh;
@@ -209,40 +214,46 @@ main {
   color: var(--a-color);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 /* main content menu */
 
 .album-row {
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: violet;
+  margin-left: 1.5em;
+}
+
+.title-section {
+  margin: 1.5em;
+}
+.title-section p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
 }
 
 .album-box {
-  width: 200px;
-  height: 200px;
-  background-color: yellowgreen;
+  width: 238px;
+  
+  margin-right: 2em;
 }
 
 .album-box img {
-  width: 100%;
+  width: 95%;
 }
 
-.mid-section .album-row {
-  background-color: blue;
+.album-description {
+  text-align: center;
 }
-.mid-section .album-box {
-  background-color: red;
-}
+
+.mid-section .album-row,
 .bot-section .album-row {
-  background-color: yellow;
+  width: 34%;
 }
-.bot-section .album-box {
-  background-color: orangered;
+
+.bot-section .album-row .album-box img {
+  border-radius: 50%;
 }
 
 /* /main content */
