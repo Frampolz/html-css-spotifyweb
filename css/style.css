@@ -80,7 +80,7 @@ main {
 }
 /* side menu */
 .side-menu {
-    height: calc(100% - var(--profile-height));
+    height: calc(99% - var(--profile-height));
 }
 
 .side-menu-container {
@@ -157,6 +157,7 @@ main {
 .get-app a {
     color: #a3a3a3;
     font-size: 0.9em;
+    font-weight: bold;
 }
 .get-app hr {
     width: 13em;
@@ -188,6 +189,7 @@ main {
   justify-content: end;
   align-items: center;
   height: 100%;
+  margin-right: 2em;
     
 }
 .upgrade a {
@@ -198,6 +200,7 @@ main {
     padding: 0.5em 3em;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 0.9em;
 }
 /* /upgrade row */
 /* main content menu */
@@ -335,6 +338,28 @@ footer {
   height: 5px;
   background: gray;
   border-radius: 20em;
+  position: relative;
+  
+}
+
+.slider-fill {
+  position: absolute;
+  left: 0;
+  width: 25%;
+  height: 5px;
+  background: rgb(193, 193, 193);
+  border-radius: 20em;
+}
+
+.slider-dot {
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 24%;
+  bottom: -5px;
 }
 
 .timer {
@@ -361,7 +386,20 @@ footer {
   background: gray;
   border-radius: 20em;
   margin: 0 10px;
+  position: relative;
 }
+
+.volume-slider-fill  {
+  width: 2em;
+  height: 5px;
+  background: rgb(193, 193, 193);
+  border-radius: 20em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
 /* /player */
 /* /footer */
 
