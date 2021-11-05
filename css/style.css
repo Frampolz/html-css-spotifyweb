@@ -455,8 +455,11 @@ footer {
   
 }
 @media screen and (max-width: 700px) {
+.main-content {
+  overflow-x: hidden;
+}
 .album-row {
-  min-width: 680px;
+  min-width: 500px;
 }
 .top-section .album-row {
   flex-direction: row;
@@ -471,9 +474,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .main-content {
-    overflow-x: hidden;
-  }
 .side-bar {
   width: var(--side-bar-xs-width-large);
 }
