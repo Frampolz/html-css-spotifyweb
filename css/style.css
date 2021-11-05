@@ -59,7 +59,7 @@ h3 {
 main {
   width: 100%;
   height: calc(100% - var(--footer-height));
-   overflow: hidden;
+  overflow: hidden;
 }
 /* side bar */
 .side-bar {
@@ -87,9 +87,13 @@ main {
   height: 200px;
 }
 
-.logo img {
+.logo>img {
   max-width: 70%;
   margin: 1.2em;
+}
+
+.small-logo img {
+  display: none;
 }
 
 .side-menu ul li img {
@@ -116,12 +120,15 @@ main {
 }
 .playlist-add {
   height: 70px;
+  padding-top: 0.5em;
 }
+
 .playlist-add .fa-plus-square {
     color: gray;
     font-size: 3em;
     margin-right: 0.1em;
     margin-left: 0.3em;
+    vertical-align: middle;
 }
 .playlist-add a {
   color: #a3a3a3;
@@ -219,6 +226,13 @@ main {
   font-weight: bold;
   font-size: 0.8em;
 }
+
+.main-menu ul li .green-row {
+  width: 25px;
+  height: 2px;
+  background: greenyellow;
+  margin: 0 auto;
+}
 /* main content menu */
 
 .album-row {
@@ -248,6 +262,7 @@ main {
 
 .album-description {
   text-align: center;
+  font-size: 0.65em;
 }
 
 .mid-section .album-row,
@@ -403,14 +418,78 @@ footer {
 /* /player */
 /* /footer */
 
+@media screen and (max-width:1100px) {
+  
+}
+@media screen and (max-width: 700px) {
+  .album-box {
+    width: 175px;
+  }
+.top-section .album-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 816px;
+}
+  
+.mid-section .album-row {
+  width: 100%;
+}
+}
+
 @media screen and (max-width: 600px) {
-  .main-nav {
-    width: var(--main-nav-xs-width-large);
-  }
   .main-content {
-    width: calc(100% - var(--main-nav-xs-width-large));
+    overflow-x: hidden;
   }
-  .main-call-to-action {
-  width: calc( 100% - var(--main-nav-xs-width-large));
-  }
-  }
+.side-bar {
+  width: var(--side-bar-xs-width-large);
+}
+
+.main-content {
+  width: calc(100% - var(--side-bar-xs-width-large));
+}
+
+.upgrade-row {
+  width: calc( 100% - var(--side-bar-xs-width-large));
+}
+
+.logo img {
+  display: none;
+}
+
+.small-logo img {
+  display: block;
+  width: 50%;
+  margin: 1em;
+}
+ 
+.side-bar a {
+  display: none;
+}
+
+.playlist-menu {
+  display: none;
+}
+
+.top-section .album-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 816px;
+  margin-left: 1.5em;
+}
+  
+.mid-section .album-row {
+  width: 100%;
+}
+
+.get-app img {
+  margin-bottom: 1em;
+}
+
+.get-app hr {
+  display: none;
+}
+.profile h3  {
+  display: none;
+}
+}
