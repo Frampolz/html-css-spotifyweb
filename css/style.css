@@ -452,8 +452,25 @@ footer {
 /* /footer */
 
 @media screen and (max-width:1100px) {
-  
+  .main-content {
+  overflow-x: hidden;
 }
+.album-row {
+  min-width: 100%;
+}
+.top-section .album-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ 
+}
+
+.album-box {
+  width: 18.2%;
+}
+}
+  
+
 @media screen and (max-width: 700px) {
 .main-content {
   overflow-x: hidden;
@@ -509,13 +526,10 @@ footer {
   flex-wrap: wrap;
   
 }
-  
-.album-row {
-  min-width: 500px;
+
+.album-box {
+  width: 175px;
 }
-  .album-box {
-    width: 175px;
-  }
 .get-app img {
   margin-bottom: 1em;
 }
