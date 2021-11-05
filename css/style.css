@@ -41,9 +41,10 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: var(--a-color);
+  text-decoration: none;
+  color: var(--a-color);
 }
+
 a:hover,
 a:active,
 a:focus {
@@ -75,6 +76,7 @@ main {
   min-height: var(--side-bar-min-height);
   background-color: black;
 }
+
 .playlist ul,
 .side-bar h3,
 .get-app {
@@ -141,24 +143,28 @@ main {
   height: calc(100% - 270px);
   overflow: hidden;
 }
+
 .playlist-menu h3 {
   color: white;
 }
+
 .playlist-add {
   height: 70px;
   padding-top: 0.5em;
 }
 
 .playlist-add .fa-plus-square {
-    color: gray;
-    font-size: 3em;
-    margin-right: 0.1em;
-    margin-left: 0.3em;
-    vertical-align: middle;
+  color: gray;
+  font-size: 3em;
+  margin-right: 0.1em;
+  margin-left: 0.3em;
+  vertical-align: middle;
 }
+
 .playlist-add a {
   color: #a3a3a3;
 }
+
 .playlist {
   overflow-y: auto;
   height: 80%;
@@ -174,29 +180,31 @@ main {
 
 .profile-logo img {
   width: 1.5em;
-    background-color: gray;
-    border-radius: 5em;
-    vertical-align: middle;
-    margin-left: 1em;
+  background-color: gray;
+  border-radius: 5em;
+  vertical-align: middle;
+  margin-left: 1em;
 }
 
 .profile>h3 {
-    display: inline;
-    margin: 0.5em;
+  display: inline;
+  margin: 0.5em;
 }
+
 .get-app img {
-    width: 1.2em;
-    vertical-align: middle;
+  width: 1.2em;
+  vertical-align: middle;
 }
 
 .get-app a {
-    color: #a3a3a3;
-    font-size: 0.9em;
-    font-weight: bold;
+  color: #a3a3a3;
+  font-size: 0.9em;
+  font-weight: bold;
 }
+
 .get-app hr {
-    width: 13em;
-    margin: 1em 0;
+  width: 13em;
+  margin: 1em 0;
 }
 /* /profile */
 
@@ -228,14 +236,14 @@ main {
     
 }
 .upgrade a {
-    background-color: transparent;
-    border: 2px solid lightslategray;
-    color: white;
-    border-radius: 5em;
-    padding: 0.5em 3em;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.9em;
+  background-color: transparent;
+  border: 2px solid lightslategray;
+  color: white;
+  border-radius: 5em;
+  padding: 0.5em 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 /* /upgrade row */
 /* main content menu */
@@ -455,9 +463,11 @@ footer {
   .main-content {
   overflow-x: hidden;
 }
+
 .album-row {
   min-width: 100%;
 }
+
 .top-section .album-row {
   flex-direction: row;
   flex-wrap: wrap;
@@ -469,15 +479,23 @@ footer {
   width: 18.2%;
 }
 }
-  
+
+/* media query */
+@media screen and (max-height: 300px) {
+  .upgrade-row {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 700px) {
 .main-content {
   overflow-x: hidden;
 }
+
 .album-row {
   min-width: 500px;
 }
+
 .top-section .album-row {
   flex-direction: row;
   flex-wrap: wrap;
@@ -530,6 +548,7 @@ footer {
 .album-box {
   width: 175px;
 }
+
 .get-app img {
   margin-bottom: 1em;
 }
@@ -541,6 +560,7 @@ footer {
 .get-app a:nth-child(2) {
   display: none;
 }
+
 .profile h3  {
   display: none;
 }
