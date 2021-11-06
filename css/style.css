@@ -112,25 +112,27 @@ main {
 
 .side-menu ul li a,
 .playlist-menu ul li a {
-  color: gray;
+  color: var(--a-color);
   font-weight: bold;
   font-size: 0.9em;
 }
 
-
-
 .side-menu-container ul li {
   border-left: 3px solid black;
   padding-left: 1em;
-  
 }
 
 .side-menu-container ul li.active {
   border-left: 3px solid var(--a-active-underline-color);
 }
 
+/* .side-menu ul li a img,
+.side-menu ul li {
+
+} */
+
 .side-menu ul li a:hover img,
-.side-menu ul li a:hover {
+.side-menu ul li:hover {
   color: white;
   opacity: 1;
 }
@@ -289,12 +291,38 @@ main {
 
 .album-box {
   width: 238px;
-  
   margin-right: 2em;
+  
 }
 
 .album-box img {
-  width: 95%;
+  width: 100%;
+}
+
+.box-overlay{
+  position: relative;
+  
+  
+}
+
+
+.box-overlay .play-album {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.album-box:hover .play-album {
+  display: block;
+}
+.album-box:hover img {
+  filter: brightness(50%);
+  cursor: pointer;
 }
 
 .album-description {
@@ -408,7 +436,6 @@ footer {
 }
 
 .slider-dot {
-  display: none;
   width: 15px;
   height: 15px;
   background-color: white;
@@ -416,6 +443,13 @@ footer {
   position: absolute;
   left: 24%;
   bottom: -5px;
+  display: none;
+}
+
+.slider:hover .slider-dot,
+.volume-slider:hover .slider-dot {
+  display: block;
+  cursor: pointer;
 }
 
 .timer {
@@ -455,7 +489,6 @@ footer {
   top: 0;
 }
 
-
 /* /player */
 /* /footer */
 
@@ -476,7 +509,7 @@ footer {
 }
 
 .album-box {
-  width: 18.2%;
+  width: 17.9%;
 }
 }
 
@@ -528,11 +561,15 @@ footer {
 .small-logo img {
   display: block;
   width: 50%;
-  margin: 1em;
+  margin: 0.8em;
 }
  
 .side-menu ul a:last-child {
   display: none;
+}
+
+.side-menu-container ul li {
+  padding-left: 0.7em;
 }
 
 .playlist-menu {
