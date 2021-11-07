@@ -1,0 +1,10 @@
+.player-control ul li:active {
+  scale: 1;
+}
+
+/* upgrade row hide */
+@media screen and (max-height: 300px) {
+  .upgrade-row {
+    display: none;
+  }
+}

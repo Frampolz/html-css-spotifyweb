@@ -34,15 +34,22 @@ html {
   display: table;
   clear: both;
 }
-/* common */
+
 /* list */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
   color: var(--a-color);
+}
+/* list hover */
+.left-player ul li:hover,
+.playlist ul li a:hover,
+.get-app a:hover,
+.main-menu ul li a:hover {
+  color: var(--a-hover-color);
 }
 
 a:hover,
@@ -105,14 +112,13 @@ main {
 }
 
 .side-menu ul li img {
-  width: 1.5em;
+  width: 2em;
   vertical-align: middle;
   opacity: 0.7;
 }
 
 .side-menu ul li a,
 .playlist-menu ul li a {
-  color: var(--a-color);
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -120,20 +126,19 @@ main {
 .side-menu-container ul li {
   border-left: 3px solid black;
   padding-left: 1em;
+  width: 10em;
+
 }
 
 .side-menu-container ul li.active {
   border-left: 3px solid var(--a-active-underline-color);
 }
 
-/* .side-menu ul li a img,
-.side-menu ul li {
-
-} */
-
-.side-menu ul li a:hover img,
-.side-menu ul li:hover {
+.side-menu-container ul li:hover .add-hover {
   color: white;
+}
+
+.side-menu-container ul li:hover .img-hover {
   opacity: 1;
 }
 
@@ -156,7 +161,7 @@ main {
 }
 
 .playlist-add .fa-plus-square {
-  color: gray;
+  color: var(--a-color);
   font-size: 3em;
   margin-right: 0.1em;
   margin-left: 0.3em;
@@ -164,9 +169,12 @@ main {
 }
 
 .playlist-add a {
-  color: #a3a3a3;
+  font-weight: bold;
 }
 
+.playlist-add:hover .add-hover {
+  color: var(--a-hover-color);
+}
 .playlist {
   overflow-y: auto;
   height: 80%;
@@ -194,12 +202,11 @@ main {
 }
 
 .get-app img {
-  width: 1.2em;
+  width: 1.5em;
   vertical-align: middle;
 }
 
 .get-app a {
-  color: #a3a3a3;
   font-size: 0.9em;
   font-weight: bold;
 }
@@ -247,6 +254,10 @@ main {
   font-weight: bold;
   font-size: 0.9em;
 }
+
+.upgrade a:hover {
+  scale: 1.1;
+}
 /* /upgrade row */
 /* main content menu */
 .main-menu ul {
@@ -259,7 +270,6 @@ main {
 }
 
 .main-menu ul li a {
-  color: var(--a-color);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8em;
@@ -268,7 +278,7 @@ main {
 .main-menu ul li .green-row {
   width: 25px;
   height: 2px;
-  background: greenyellow;
+  background: var(--a-active-underline-color);
   margin: 0 auto;
 }
 
@@ -292,7 +302,6 @@ main {
 .album-box {
   width: 238px;
   margin-right: 2em;
-  
 }
 
 .album-box img {
@@ -301,10 +310,7 @@ main {
 
 .box-overlay{
   position: relative;
-  
-  
 }
-
 
 .box-overlay .play-album {
   position: absolute;
@@ -371,13 +377,13 @@ footer {
 }
 
 .now-playing {
-  margin: 0 3em 0 0.6em;
+  margin: 0 2em 0 0.6em;
 }
 
 .left-player ul li {
   display: inline-block;
-  color: gray;
 }
+
 
 .now-playing h4{
   color: white;
@@ -389,8 +395,14 @@ footer {
 }
 
 .now-playing h5{
-  color: gray;
+  color: var(--a-color);
   font-size: 0.8em;
+}
+
+.now-playing h5:hover{
+  color: var(--a-hover-color);
+  text-decoration: underline;
+  
 }
 
 .player-control{
@@ -407,6 +419,11 @@ footer {
   color: white;
   font-size: 1.5em;
   margin: 0 0.5em;
+}
+
+.player-control ul li:hover {
+  scale: 1.2;
+  cursor: pointer;
 }
 
 .slider {
@@ -489,9 +506,15 @@ footer {
   top: 0;
 }
 
+.slider-track:hover .slider-fill,
+.volume-slider:hover .volume-slider-fill {
+  background: var(--a-active-underline-color);
+}
+
 /* /player */
 /* /footer */
 
+/* media query */
 @media screen and (max-width:1100px) {
   .main-content {
   overflow-x: hidden;
@@ -511,13 +534,6 @@ footer {
 .album-box {
   width: 17.9%;
 }
-}
-
-/* media query */
-@media screen and (max-height: 300px) {
-  .upgrade-row {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 700px) {
