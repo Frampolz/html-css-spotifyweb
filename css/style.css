@@ -127,12 +127,33 @@ main {
   border-left: 3px solid black;
   padding-left: 1em;
   width: 10em;
-
+  position: relative;
 }
 
-.side-menu-container ul li.active {
-  border-left: 3px solid var(--a-active-underline-color);
+/* green left row */
+.side-menu-container ul li a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  height: 3px;
+  width: 35px;
+  background-color: var(--a-active-underline-color);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  rotate: 90deg;
+  }
+
+ .side-menu-container ul li a:active::before {
+    background-color: var(--a-active-underline-color);
 }
+.side-menu-container ul li a:hover::before, 
+.side-menu-container ul li a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+/* /green left row */
 
 .side-menu-container ul li:hover .add-hover {
   color: white;
@@ -141,7 +162,6 @@ main {
 .side-menu-container ul li:hover .img-hover {
   opacity: 1;
 }
-
 /* /side menu */
 
 /* playlist */
@@ -273,15 +293,30 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8em;
+  position: relative;
 }
 
-.main-menu ul li .green-row {
-  width: 25px;
-  height: 2px;
-  background: var(--a-active-underline-color);
-  margin: 0 auto;
+.main-menu ul li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--a-active-underline-color);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  }
+  .main-menu ul li a:active::after {
+    background-color: var(--a-active-underline-color);
 }
-
+.main-menu ul li a:hover::after, 
+.main-menu ul li a:focus::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+  
 /* main content menu */
 
 .album-row {

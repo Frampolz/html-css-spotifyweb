@@ -2,6 +2,10 @@
   scale: 1;
 }
 
+.main-menu ul li a::after {
+ 
+  transition: color 0.1s,transform 0.2s ease-out;
+}
 /* upgrade row hide */
 @media screen and (max-height: 300px) {
   .upgrade-row {
