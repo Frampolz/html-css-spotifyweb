@@ -419,7 +419,6 @@ footer {
   display: inline-block;
 }
 
-
 .now-playing h4{
   color: white;
   font-size: 0.8em;
@@ -437,7 +436,6 @@ footer {
 .now-playing h5:hover{
   color: var(--a-hover-color);
   text-decoration: underline;
-  
 }
 
 .player-control{

@@ -1,5 +1,14 @@
+.album-box:active .play-album {
+  color: var(--a-active-underline-color);
+}
+
 .player-control ul li:active {
   scale: 1;
+}
+
+.upgrade a:active {
+  border-color: var(--a-active-underline-color);
+  color: var(--a-active-underline-color);
 }
 
 .main-menu ul li a::after {
