@@ -95,7 +95,7 @@ main {
 }
 /* side menu */
 .side-menu {
-    height: calc(99% - var(--profile-height));
+  height: calc(99% - var(--profile-height));
 }
 
 .side-menu-container {
@@ -143,10 +143,10 @@ main {
   transform-origin: right top;
   transform: scale(0, 1);
   rotate: 90deg;
-  }
+}
 
- .side-menu-container ul li a:active::before {
-    background-color: var(--a-active-underline-color);
+.side-menu-container ul li a:active::before {
+  background-color: var(--a-active-underline-color);
 }
 .side-menu-container ul li a:hover::before, 
 .side-menu-container ul li a:focus::before {
@@ -539,7 +539,7 @@ footer {
   top: 0;
 }
 
-.slider-track:hover .slider-fill,
+.slider:hover .slider-fill,
 .volume-slider:hover .volume-slider-fill {
   background: var(--a-active-underline-color);
 }
@@ -558,10 +558,10 @@ footer {
 }
 
 .top-section .album-row {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
- 
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+
 }
 
 .album-box {

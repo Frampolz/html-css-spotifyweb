@@ -9,9 +9,9 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <!-- link css file -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bonus/bonus.css">
-
 
     <title>Spotify</title>
 </head>
@@ -19,15 +19,19 @@
 <body>
     <div class="main-container">
         <main class="clearfix">
+            <!-- sidebar -->
             <nav class="side-bar">
                 <div class="side-menu">
                     <div class="side-menu-container">
+                        <!-- logo -->
                         <div class="logo">
                             <img src="img/logo.svg" alt="">
                             <div class="small-logo">
                                 <a href=""><img src="img/logo-small.svg" alt=""></a>
                             </div>
                         </div>
+                        <!-- /logo -->
+                        <!-- sidebar menù -->
                         <ul>
                             <li>
                                 <a href="#"><img class="img-hover" src="img/home.svg"></a>
@@ -42,8 +46,9 @@
                                 <a class="add-hover" href="#">La tua libreria</a>
                             </li>
                         </ul>
-
+                        <!-- /sidebar menù -->
                     </div>
+                    <!-- playlist -->
                     <div class="playlist-menu">
                         <h3>PLAYLIST</h3>
                         <div class="playlist-add">
@@ -62,7 +67,9 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- /playlist -->
                 </div>
+                <!-- profile & download link -->
                 <div class="profile">
                     <div class="get-app">
                         <a href=""><img src="img/download.svg" alt=""></a>
@@ -72,42 +79,43 @@
                     <a class="profile-logo" href=""><img src="img/profile.svg" alt=""></a>
                     <h3>John Doe</h3>
                 </div>
+                <!-- profile & download link -->
             </nav>
+            <!-- /sidebar -->
+            <!-- main content -->
             <section class="main-content">
+                <!-- upgrade button -->
                 <div class="upgrade-row">
                     <div class="upgrade">
                         <a href="">effettua l'upgrade</a>
                     </div>
                 </div>
+                <!-- upgrade button -->
                 <!-- main content menu -->
                 <nav class="main-menu">
                     <ul>
                         <li>
                             <a href="#">in evidenza</a>
-                         
                         </li>
                         <li>
                             <a href="#">podcast</a>
-                          
                         </li>
                         <li>
                             <a href="#">classifiche</a>
-                          
                         </li>
                         <li>
-                            <a href="#">generi e mood</a>
-                          
+                            <a href="#">generi e mood</a>                          
                         </li>
                         <li>
-                            <a href="#">nuove uscite</a>
-                         
+                            <a href="#">nuove uscite</a>                        
                         </li>
                         <li>
                             <a href="#">scopri</a>
-                       
                         </li>
                     </ul>
                 </nav>
+                <!-- /main content menu -->
+                <!-- album section -->
                 <section class="top-section">
                     <div class="title-section">
                         <h2>Recently played</h2>
@@ -217,6 +225,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- rounded album section -->
                 <section class="bot-section">
                     <div class="title-section">
                         <h2>Artisti pi&ugrave; popolari</h2>
@@ -247,10 +256,15 @@
                         </div>
                     </div>
                 </section>
+                <!-- rounded album section -->
+                <!-- /album section -->
             </section>
+            <!-- /main content -->
         </main>
         <footer>
+        <!-- player -->
             <div class="player-row">
+                <!-- left player current track -->
                 <div class="left-player">
                     <img src="img/sinister.jpeg" alt="">
                     <div class="now-playing">
@@ -262,6 +276,8 @@
                         <li><i class="far fa-folder"></i></li>
                     </ul>
                 </div>
+                <!-- /left player current track -->
+                <!-- player control -->
                 <div class="player-control">
                     <div class="control">
                         <ul>
@@ -292,11 +308,11 @@
                         <div class="volume-slider-fill"></div>
                         <div class="slider-dot"></div>
                     </div>
-
                 </div>
+                <!-- /player control -->
             </div>
+        <!-- /player -->
         </footer>
     </div>
 </body>
-
 </html>
